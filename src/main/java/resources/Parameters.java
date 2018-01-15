@@ -8,6 +8,9 @@ public class Parameters {
     public static final String AVAL = "https://www.aval.ua/ru/personal/everyday/exchange/exchange/";
     public static final String OSCHAD_BANK = "http://www.oschadbank.ua/ua/";
     public static final String BANK_GOV = "http://www.bank.gov.ua/control/uk/curmetal/detail/currency?period=daily";
+    public static final int COUNT_OF_NUMBER_EX_1 = 4;
+    public static final int COUNT_OF_NUMBER_EX_3 = 5;
+
 
 }
 
