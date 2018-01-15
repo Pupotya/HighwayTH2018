@@ -11,7 +11,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class Akinator {
-
+    //TODO while(element with question present)
     public static void main(String[] args) throws Exception {
 
         System.setProperty("webdriver.chrome.driver", Parameters.CHROME_DRIVER_PATH);
@@ -47,9 +47,7 @@ public class Akinator {
     static String readInput(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите Ваш ответ");
-        String x = scanner.nextLine();
-//        scanner.close();
-        return x;
+        return scanner.nextLine();
     }
 
 }
