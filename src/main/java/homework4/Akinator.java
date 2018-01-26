@@ -27,7 +27,7 @@ public class Akinator {
         driver.findElement(By.cssSelector("#elokence_sitebundle_identification_age")).sendKeys(age);
         action.doubleClick(element).build().perform();
 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 
         for(int i=0;i<7;i++){
             System.out.println(driver.findElement(By.cssSelector("#bulle-inner")).getText());
@@ -49,5 +49,7 @@ public class Akinator {
         System.out.println("Введите Ваш ответ");
         return scanner.nextLine();
     }
+
+
 
 }

@@ -4,7 +4,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.*;
 import resources.Parameters;
-import resources.Resources;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,17 +14,17 @@ public class CinemaFreeSeats {
 
         System.setProperty("webdriver.chrome.driver", Parameters.CHROME_DRIVER_PATH);
         WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
+        driver.manage().timeouts().implicitlyWait(200, TimeUnit.MILLISECONDS);
 
         driver.get("http://liniakino.com/showtimes/aladdin");
         driver.findElement(By.id("closeButton")).click();
 //        driver.findElement(By.xpath("//li[contains(h1,'Зоряні війни')]//li/a")).click();
         driver.findElement(By.xpath("//li[contains(h1,'Джуманджі: Поклик джунглів')]//li/a")).click();
-//        try {
-//            Thread.sleep(300);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         WebDriverWait wait = new WebDriverWait(driver, 6, 300);
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("iframe")));
@@ -33,7 +32,7 @@ public class CinemaFreeSeats {
         driver.switchTo().frame(iFrameElement);
         wait.until(ExpectedConditions.invisibilityOfElementWithText((By.id("hall-scheme-loading")),"\n" +
                 "\t\tЗавантаження, зачекайте\t\t"));
-        wait.until(Resources.waitForJsToLoad());
+//        wait.until(Resources.waitForJsToLoad());
 
         int allSeats = count(driver, "#hall-scheme-container>div>.seat");
         int freeSeats = count(driver, "#hall-scheme-container>div>.seat-color1");
