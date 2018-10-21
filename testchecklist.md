@@ -1,10 +1,27 @@
-| Task           | Time required | Assigned to   | Current Status | Finished |
-|----------------|---------------|---------------|----------------|-----------|
-| Calendar Cache | > 5 hours  | @georgehrke | in progress | - [x] ok?
-| Object Cache   | > 5 hours  | @georgehrke | in progress | [x] item1<br/>[ ] item2
-| Object Cache   | > 5 hours  | @georgehrke | in progress | <ul><li>- [x] item1</li><li>- [ ] item2</li></ul>
-| Object Cache   | > 5 hours  | @georgehrke | in progress | <ul><li>[x] item1</li><li>[ ] item2</li></ul>
+<h1>Checklist</h1>
+
+Дата последней проверки : 2018-10-22
+
+-------------------------------------
+| № |   Feature      | Check Status |
+|---|----------------|--------------|
+| 1 | Welcome письмо, после регистрации | - []
+| 2 | Resend с плашки конфирма| - []
+| 3 | Change mail, c плашки и в настройках | - []
+| 4 | Allow/Block Web Push | - []
+| 5 | Письмо, после успешной оплаты | - []
+| 6 | Auto top up пиcьмо у платника, после включения в настройках | - []
+| 7 | Отписка в настройках профиля | - []
+| 8 | Отписка в настройках профиля ползунком | - []
+| 9 | Подписка в настройках профиля | - []
+|10 | Передача параметров на МФ | - []
+|11 | Allow/Block Web Push | - []
+|12 | Получение письма Forgot Password  | - []
+|13 | Отправка писем из admin.victoriabrides.com | - []
+|14 | Отписанному пользователю не приходят письма | - []
+|15 | На реальную женскую регистрацию не приходят Welcome | - []
+|16 | Real gifts letters | - []
 
 
 - [x] works
-- [x] works too
+- [ ] not work
